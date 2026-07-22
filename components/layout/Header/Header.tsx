@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import Container from "../Container/Container";
 
 import css from "./Header.module.css";
 
 export default function Header() {
+   const pathname = usePathname();
+  
   return (
     <header className={css.header}>
       <Container>
@@ -15,9 +20,20 @@ export default function Header() {
             </svg>
           </Link>
 
-          <nav className={css.nav}>
-            <Link href="/">Home</Link>
-            <Link href="/catalog">Catalog</Link>
+           <nav className={css.nav}>
+            <Link
+              href="/"
+              className={pathname === "/" ? css.active : ""}
+            >
+              Home
+            </Link>
+
+            <Link
+              href="/catalog"
+              className={pathname === "/catalog" ? css.active : ""}
+            >
+              Catalog
+            </Link>
           </nav>
         </div>
       </Container>

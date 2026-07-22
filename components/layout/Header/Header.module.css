@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.logo {
+  margin-right: 450px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.67;
+
+  transition: color 250ms ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: var(--color-muted-sage);
+}
+
+.active {
+  color: var(--color-muted-sage);
+}
