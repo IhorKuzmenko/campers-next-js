@@ -8,8 +8,8 @@ import Container from "../Container/Container";
 import css from "./Header.module.css";
 
 export default function Header() {
-   const pathname = usePathname();
-  
+  const pathname = usePathname();
+
   return (
     <header className={css.header}>
       <Container>
@@ -20,11 +20,8 @@ export default function Header() {
             </svg>
           </Link>
 
-           <nav className={css.nav}>
-            <Link
-              href="/"
-              className={pathname === "/" ? css.active : ""}
-            >
+          <nav className={css.nav}>
+            <Link href="/" className={pathname === "/" ? css.active : ""}>
               Home
             </Link>
 

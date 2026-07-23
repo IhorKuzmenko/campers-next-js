@@ -39,6 +39,10 @@ body {
   font-family: var(--font-inter);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a,
 a:visited,
 a:hover {

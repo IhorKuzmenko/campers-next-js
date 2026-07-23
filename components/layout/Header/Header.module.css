@@ -1,7 +1,12 @@
+.header {
+  background-color: var(--color-light-gray-1);
+}
 .wrapper {
   display: flex;
   align-items: center;
   padding: 28px 0;
+
+  background-color: var(--color-light-gray-1);
 }
 
 .logo {
