@@ -1,0 +1,27 @@
+.page {
+  padding-top: 64px;
+  padding-bottom: 278px;
+}
+
+.galleryInfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.galleryInfoWrapper > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}

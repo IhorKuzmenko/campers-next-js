@@ -1,0 +1,37 @@
+.wrapper {
+  padding: 24px;
+  width: 650px;
+  height: 304px;
+
+  border-radius: 16px;
+  background-color: var(--color-light-gray-2);
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.description {
+  line-height: 1.5;
+  color: var(--color-dark-blue-gray);
+}

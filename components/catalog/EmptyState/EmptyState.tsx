@@ -1,20 +1,18 @@
+"use client";
+
 import Image from "next/image";
 
 import css from "./EmptyState.module.css";
 
 interface EmptyStateProps {
-  onClear: () => void;
-  onViewAll: () => void;
+  onClear?: () => void;
+  onViewAll?: () => void;
 }
 
-export default function EmptyState({
-  onClear,
-  onViewAll,
-}: EmptyStateProps) {
+export default function EmptyState({ onClear, onViewAll }: EmptyStateProps) {
   return (
     <div className={css.wrapper}>
       <Image
-        className={css.image}
         src="/images/notFoundImage.png"
         alt="No campers found"
         width={488}
@@ -29,15 +27,21 @@ export default function EmptyState({
         Try adjusting your search or clearing some filters.
       </p>
 
-      <div className={css.buttons}>
-        <button className={css.clearButton} onClick={onClear}>
-          ✕ Clear filters
-        </button>
+      {(onClear || onViewAll) && (
+        <div className={css.buttons}>
+          {onClear && (
+            <button className={css.clearButton} onClick={onClear}>
+              ✕ Clear filters
+            </button>
+          )}
 
-        <button className={css.viewButton} onClick={onViewAll}>
-          View all campers
-        </button>
-      </div>
+          {onViewAll && (
+            <button className={css.viewButton} onClick={onViewAll}>
+              View all campers
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
