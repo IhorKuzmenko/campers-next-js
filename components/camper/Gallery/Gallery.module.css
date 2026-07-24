@@ -7,7 +7,7 @@
 
 .mainSwiper {
   width: 638px;
-  height: 555px;
+  height: 505px;
   flex-shrink: 0;
 
   --swiper-navigation-color: var(--color-white);
