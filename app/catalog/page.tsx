@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "TravelTrucks",
     images: [
       {
-        url: "https://campers-next-js.vercel.app/public/images/heroImage.webp",
+        url: "https://campers-next-js.vercel.app/images/heroImage.webp",
         width: 1200,
         height: 630,
         alt: "TravelTrucks camper catalog",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Browse available campers and find the perfect vehicle for your next adventure.",
     images: [
-      "https://campers-next-js.vercel.app/public/images/heroImage.webp",
+      "https://campers-next-js.vercel.app/images/heroImage.webp",
     ],
   },
 };

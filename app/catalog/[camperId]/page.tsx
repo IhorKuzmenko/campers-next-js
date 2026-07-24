@@ -30,7 +30,7 @@ export async function generateMetadata(
 
   const image =
     camper.gallery?.[0]?.original ||
-    "https://campers-next-js.vercel.app/image-heroImage.webp";
+    "https://campers-next-js.vercel.app/heroImage.webp";
 
 
   return {
